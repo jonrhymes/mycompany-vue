@@ -1,33 +1,91 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/faq">FAQ</router-link> |
-      <router-link to="/about">About</router-link>
+
+    <nav class="navbar is-dark has-shadow" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a id="brand" class="navbar-item" href="">MyCompany</a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive}">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+    <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active': isActive}">
+      <div class="navbar-end">
+        <router-link to="/" class="navbar-item">Home</router-link>
+        <router-link to="faq" class="navbar-item">Features</router-link>
+        <router-link to="faq" class="navbar-item">About</router-link>
+        <router-link to="faq" class="navbar-item">FAQ</router-link>
+        <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary is-outlined">
+            <span class="icon">
+              <i class="fa fa-download"></i>
+            </span>
+            <span>Join Now</span>
+          </a>
+        </div>
+      </div>
+      </div>
     </div>
-    <router-view/>
+    </nav>
+
+    Home
+    <router-view></router-view>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p>This is a footer, where a bunch of links go!</p>
+          </div>
+          <div class="column has-text-right">
+            <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </div>
 </template>
 
+<script>
+export default {
+  name: 'app',
+  data: function() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggleNav: function() {
+      this.isActive = !this.isActive
+    }
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
+#brand {
   font-weight: bold;
-  color: #2c3e50;
+  padding-left: 1.75rem;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.navbar-end > .navbar-item {
+  padding: 0.5rem 1.75rem;
 }
+
+.social-icon {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.footer {
+  background-color: #00d1b2 !important;
+  color: #fff;
+}
+
 </style>
