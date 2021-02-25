@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <nav class="navbar is-dark has-shadow" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a id="brand" class="navbar-item" href="">MyCompany</a>
 
@@ -32,18 +32,17 @@
     </div>
     </nav>
 
-    Home
     <router-view></router-view>
 
     <footer class="footer">
       <div class="container">
         <div class="columns">
           <div class="column">
-            <p>This is a footer, where a bunch of links go!</p>
+            <p class="foot-desc">This is a footer, where a bunch of links go!</p>
           </div>
           <div class="column has-text-right">
-            <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-2x fa-facebook"></i></a>
+            <a class="social-icon" href="#"><i class="fa fa-2x fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -86,6 +85,10 @@ export default {
 .footer {
   background-color: #00d1b2 !important;
   color: #fff;
+}
+
+.foot-desc {
+  font-size: 1.25rem;
 }
 
 </style>

@@ -9,6 +9,50 @@
           <a class="button is-large is-primary" id="learn">Learn More</a>
       </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column is-1 has-text-centered">
+            <i class="fa fa-cog is-primary"></i>
+          </div>
+          <div class="column is-one-third-desktop">
+            <p class="nu-title"><strong>We provide superior logistics so that your business can succeed in any environment.</strong></p>
+          </div>
+          <div class="column">
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique lorem elit, porta hendrerit metus condimentum id. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns pd">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="new-title">“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”</p>
+              <p class="subtitle">- Alison T.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="new-title">“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”</p>
+              <p class="subtitle">- Alison T.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="new-title">“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”</p>
+              <p class="subtitle">- Alison T.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -27,12 +71,30 @@ export default {
 <style scoped>
 .hero {
   background: url('../assets/clouds.jpg');
-  background-size: 'cover';
+  background-size: cover;
+  padding-left: 20px;
 }
 
 .title {
   font-size: 4rem;
   margin-top: 2rem;
+}
+
+.nu-title {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.new-title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-top: 15px;
+}
+
+.desc {
+  font-size: 1.1rem;
 }
 
 #learn {
@@ -41,6 +103,19 @@ export default {
 
 h2 {
   margin: 1.5rem 0 2rem 0 !important;
+}
+
+.fa-cog {
+  font-size: 70px;
+  color: #00d1b2;
+}
+
+.pd {
+  padding: 2em 0;
+}
+
+#learn {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
