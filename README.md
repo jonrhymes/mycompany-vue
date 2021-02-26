@@ -8,6 +8,7 @@ Technologies include:
 * Bulma
 * Font Awesome
 * Font Awesome 2 PNG
+* JSONPlaceholder
 * Plus Frameworks:
     * Angular
     * React
