@@ -17,7 +17,7 @@
         <router-link to="/" class="navbar-item">Home</router-link>
         <router-link to="faq" class="navbar-item">Features</router-link>
         <router-link to="faq" class="navbar-item">About</router-link>
-        <router-link to="faq" class="navbar-item">FAQ</router-link>
+        <router-link to="/faq" class="navbar-item">FAQ</router-link>
         <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary is-outlined">
@@ -38,7 +38,8 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <p class="foot-desc">This is a footer, where a bunch of links go!</p>
+            <p class="foot-desc">Is this worth anything?
+            <p class="answer">You know what? It is! Email the creator of this website: <strong>jonrhymes@gmail.com</strong> for details. He’s a Developer. Ooo!</p></p>
           </div>
           <div class="column has-text-right">
             <a class="social-icon" href="#"><i class="fa fa-2x fa-facebook"></i></a>
@@ -68,6 +69,7 @@ export default {
 </script>
 
 <style>
+
 #brand {
   font-weight: bold;
   padding-left: 1.75rem;

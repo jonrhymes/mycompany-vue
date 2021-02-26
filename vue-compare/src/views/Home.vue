@@ -29,24 +29,24 @@
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <p class="new-title">“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”</p>
-              <p class="subtitle">- Alison T.</p>
+              <p class="new-title">{{ testimonial }}</p>
+              <p class="subtitle">{{ author }}</p>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <p class="new-title">“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”</p>
-              <p class="subtitle">- Alison T.</p>
+              <p class="new-title">{{ testimonial }}</p>
+              <p class="subtitle">{{ author }}</p>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <p class="new-title">“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”</p>
-              <p class="subtitle">- Alison T.</p>
+              <p class="new-title">{{ testimonial }}</p>
+              <p class="subtitle">{{ author }}</p>
             </div>
           </div>
         </div>
@@ -58,11 +58,13 @@
 
 <script>
 export default {
-  name: 'home',
+  name: 'Home',
   data () {
     return {
       heading: 'Soaring to new heights',
-      subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra, urna id pellentesque consequat.'
+      subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra, urna id pellentesque consequat.',
+      testimonial: '“Absolutely brilliant tool for SaaS and PasS businesses. We couldn’t survive without it!”',
+      author: '- Alison T.'
     }
   }
 }
@@ -86,11 +88,12 @@ export default {
 }
 
 .new-title {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .subtitle {
   margin-top: 15px;
+  font-size: 1rem;
 }
 
 .desc {
@@ -98,7 +101,7 @@ export default {
 }
 
 #learn {
-  margin-top: 30px;
+  margin: 1rem 0 2rem 0;
 }
 
 h2 {
@@ -114,8 +117,8 @@ h2 {
   padding: 2em 0;
 }
 
-#learn {
-  margin-bottom: 2rem;
+.section {
+  padding: 3rem 6.5rem;
 }
 
 @media screen and (max-width: 768px) {
