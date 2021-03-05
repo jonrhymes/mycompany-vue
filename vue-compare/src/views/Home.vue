@@ -118,7 +118,7 @@ h2 {
 }
 
 .section {
-  padding: 3rem 6.5rem;
+  padding: 3rem 6.5rems;
 }
 
 @media screen and (max-width: 768px) {

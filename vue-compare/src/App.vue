@@ -15,8 +15,8 @@
     <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active': isActive}">
       <div class="navbar-end">
         <router-link to="/" class="navbar-item">Home</router-link>
-        <router-link to="faq" class="navbar-item">Features</router-link>
-        <router-link to="faq" class="navbar-item">About</router-link>
+        <router-link to="/faq" class="navbar-item">Features</router-link>
+        <router-link to="/faq" class="navbar-item">About</router-link>
         <router-link to="/faq" class="navbar-item">FAQ</router-link>
         <div class="navbar-item">
         <div class="buttons">
