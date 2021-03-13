@@ -10,6 +10,6 @@ npm run build
 cd dist
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:jonrhymes/mycompany-angular.git master:gh-pages
+git push -f git@github.com:jonrhymes/mycompany-vue.git master:gh-pages
 
 cd -s
